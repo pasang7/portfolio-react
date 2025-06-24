@@ -1,0 +1,80 @@
+  #about {
+    background-color: #f8f9fa;
+    color: #212529;
+    padding: 5rem 0 5rem 0;  
+    padding-top: calc(5rem + 70px);
+    scroll-behavior: smooth;
+  }
+  #about h1,
+  #about p,
+  #about .lead {
+    color: #212529;
+  }
+
+  #about li {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  
+  .about-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .about-list li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .about-list li::before {
+    content: "✓";
+    color: #0d6efd;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  #about .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
+  
+  #about .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+  }
+  
+  #about img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about .modal-content {
+    background-color: #fff;
+    color: #212529;
+  }
+  
+  #about .form-label {
+    color: #212529;
+  }
+  
+  /* Animation */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,58 @@
+.custom-navbar {
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    backdrop-filter: blur(8px);
+  }
+  
+  .custom-navbar.light {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .custom-navbar.dark {
+    background-color: rgba(33, 37, 41, 0.85); /* Bootstrap dark */
+  }
+  
+  .custom-navbar.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .title {
+    font-weight: bolder;
+    font-size: 20px;
+}  
+  /* Subtitle under brand */
+  .subtitle {
+    font-size: 0.75rem;
+    color: #888;
+  }
+  
+  /* Hover underline animation */
+  .nav-link {
+    position: relative;
+    margin-right: 15px;
+    color: inherit !important;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #0d6efd;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+  
+  /* Toggle icon style */
+  .theme-toggle {
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
