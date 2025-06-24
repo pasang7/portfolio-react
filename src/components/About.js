@@ -1,23 +1,15 @@
-// components/About.js
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Button, Modal, Form, Badge } from 'react-bootstrap';
-import '../assets/css/about.css'; // Light mode
+import '../assets/css/about.css';
 import profileImg from '../assets/pasang.jpg';
 
 function About({ darkMode }) {
   const [showModal, setShowModal] = useState(false);
-
-  useEffect(() => {
-    if (darkMode) {
-      import('../assets/css/dark/about.css');
-    }
-  }, [darkMode]);
-
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
 
   return (
-    <section id="about" className={`${darkMode ? 'dark-mode' : ''}`}>
+    <section id="about" className={darkMode ? 'dark-mode' : 'light-mode'}>
       <Container>
         <Row className="align-items-center">
           <Col md={5} className="text-center mb-4 mb-md-0 fade-in-up">

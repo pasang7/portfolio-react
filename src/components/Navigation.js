@@ -5,16 +5,12 @@ import '../assets/css/navigation.css';
 function Navigation({ darkMode, toggleDarkMode }) {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
-    if (darkMode) {
-      import('../assets/css/dark/navigation.css');
-    }
-
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [darkMode]);
+  }, []);
 
   return (
     <Navbar

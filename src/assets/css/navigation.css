@@ -1,58 +1,70 @@
 .custom-navbar {
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    backdrop-filter: blur(8px);
-  }
-  
-  .custom-navbar.light {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  
-  .custom-navbar.dark {
-    background-color: rgba(33, 37, 41, 0.85); /* Bootstrap dark */
-  }
-  
-  .custom-navbar.scrolled {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  backdrop-filter: blur(8px);
 
-  .title {
-    font-weight: bolder;
-    font-size: 20px;
-}  
-  /* Subtitle under brand */
-  .subtitle {
-    font-size: 0.75rem;
-    color: #888;
-  }
-  
-  /* Hover underline animation */
-  .nav-link {
-    position: relative;
-    margin-right: 15px;
-    color: inherit !important;
-  }
-  
-  .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #0d6efd;
-    transition: width 0.3s ease;
-  }
-  
-  .nav-link:hover::after,
-  .nav-link.active::after {
-    width: 100%;
-  }
-  
-  /* Toggle icon style */
-  .theme-toggle {
-    font-size: 1.25rem;
-    cursor: pointer;
-  }
-  
+  /* Use CSS variables for colors */
+  background-color: var(--nav-bg-color);
+  color: var(--nav-text-color);
+}
+
+.custom-navbar.light {
+  --nav-bg-color: rgba(255, 255, 255, 0.8);
+  --nav-text-color: #212529; /* dark text */
+  --nav-link-underline: #0d6efd;
+  --subtitle-color: #888;
+}
+
+.custom-navbar.dark {
+  --nav-bg-color: rgba(33, 37, 41, 0.85);
+  --nav-text-color: #f1f1f1;
+  --nav-link-underline: #66b2ff;
+  --subtitle-color: #ccc;
+}
+
+.custom-navbar.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 20px;
+  color: var(--nav-text-color);
+}
+
+/* Subtitle under brand */
+.subtitle {
+  font-size: 0.75rem;
+  color: var(--subtitle-color);
+}
+
+/* Hover underline animation */
+.nav-link {
+  position: relative;
+  margin-right: 15px;
+  color: var(--nav-text-color) !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--nav-link-underline);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Toggle icon style */
+.theme-toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--nav-text-color);
+}
