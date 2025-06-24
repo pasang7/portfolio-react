@@ -31,8 +31,8 @@ function Navigation({ darkMode, toggleDarkMode }) {
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto align-items-center">
             <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#footer">Contact</Nav.Link>
             <Nav.Link onClick={toggleDarkMode} className="theme-toggle">
               {darkMode ? '🌙' : '☀️'}
