@@ -39,11 +39,6 @@
       transform: translateY(0);
     }
   }
-  .section-title {
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: var(--accent-color);
-  }
   
   /* Tabs */
   .experience-tabs {
@@ -140,19 +135,6 @@
     font-size: 1rem;
     line-height: 1.6;
   }
-  
-  .description-list li {
-    opacity: 0;
-    transform: translateY(10px);
-    animation: fadeInList 0.5s ease forwards;
-  }
-  
-  .description-list li:nth-child(1) { animation-delay: 0.1s; }
-  .description-list li:nth-child(2) { animation-delay: 0.2s; }
-  .description-list li:nth-child(3) { animation-delay: 0.3s; }
-  .description-list li:nth-child(4) { animation-delay: 0.4s; }
-  .description-list li:nth-child(5) { animation-delay: 0.5s; }
-  
   /* Animations */
   @keyframes fadeIn {
     from {

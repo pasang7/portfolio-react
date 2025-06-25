@@ -64,3 +64,9 @@ body {
   margin-top: 60px;
   font-size: 0.9rem;
 }
+
+.section-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--accent-color);
+}

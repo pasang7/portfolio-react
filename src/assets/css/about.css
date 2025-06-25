@@ -1,7 +1,7 @@
 :root {
   --text-color: #212529;
   --muted-color: #333;
-  --accent-color: #0d6efd;
+  --accent-color: #f39c12;
   --badge-bg: #0dcaf0;
   --img-shadow: rgba(0, 0, 0, 0.1);
   --modal-bg: #fff;
@@ -30,14 +30,13 @@
   --bg-color: #f8f9fa;
   background-color: var(--bg-color);
   color: var(--text-color);
-  padding: 5rem 0;
+  padding: 0;
   padding-top: calc(5rem + 70px);
   scroll-behavior: smooth;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #about h1,
-#about h2,
 #about p,
 #about .lead {
   color: var(--text-color);

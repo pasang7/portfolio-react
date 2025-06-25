@@ -6,7 +6,7 @@
     --badge-hover-bg: #5a6268;
     --card-shadow: rgba(0, 0, 0, 0.1);
     --card-hover-shadow: rgba(13, 110, 253, 0.3);
-    --accent-color: #0d6efd;
+    --accent-color: #f39c12;
   }
   
   .dark-mode {
@@ -18,7 +18,7 @@
     --badge-hover-bg: #5c5c5c;
     --card-shadow: rgba(255, 255, 255, 0.1);
     --card-hover-shadow: rgba(13, 110, 253, 0.6);
-    --accent-color: #0d6efd;
+    --accent-color: #f1c40f;
 
     .card {
         --bs-card-title-color: #fff !important;

@@ -12,14 +12,14 @@
 .custom-navbar.light {
   --nav-bg-color: rgba(255, 255, 255, 0.8);
   --nav-text-color: #212529; /* dark text */
-  --nav-link-underline: #0d6efd;
+  --nav-link-underline: #f39c12;
   --subtitle-color: #888;
 }
 
 .custom-navbar.dark {
   --nav-bg-color: rgba(33, 37, 41, 0.85);
   --nav-text-color: #f1f1f1;
-  --nav-link-underline: #66b2ff;
+  --nav-link-underline: #f1c40f;
   --subtitle-color: #ccc;
 }
 

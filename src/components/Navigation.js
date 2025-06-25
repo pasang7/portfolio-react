@@ -13,7 +13,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
   }, []);
 
   return (
-    <Navbar
+    <Navbar 
       expand="lg"
       className={`custom-navbar ${scrolled ? 'scrolled' : ''} ${darkMode ? 'dark' : 'light'}`}
       fixed="top"
@@ -26,7 +26,6 @@ function Navigation({ darkMode, toggleDarkMode }) {
         <Navbar.Toggle aria-controls="main-navbar" />
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto align-items-center">
-            <Nav.Link href="#">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#experience">Experience</Nav.Link>

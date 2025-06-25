@@ -53,10 +53,7 @@ function Skills({ darkMode }) {
   return (
     <section id="skills" className={darkMode ? 'dark-mode' : 'light-mode'}>
       <Container className="pt-5 pb-5">
-        <h2
-          className="fw-bold text-center mb-5 fade-in-up"
-          style={{ animationDelay: '0.2s' }}
-        >
+      <h2 className="section-title mb-5 fade-in-up text-center"  style={{ animationDelay: '0.2s' }}>
           Skills
         </h2>
         <Row className="g-4">

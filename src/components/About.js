@@ -25,7 +25,7 @@ function About({ darkMode }) {
           </Col>
 
           <Col md={7} className="fade-in-up">
-            <h2 className="fw-bold mb-3">Who Am I</h2>
+          <h2 className="section-title mb-5">Who Am I</h2>
             <p>
               I am a <strong>Master’s graduate in Information Technology</strong> with over <strong>three years of experience</strong> in full-stack development,
               specialising in <strong>PHP, Laravel, MySQL, JavaScript</strong>, and <strong>RESTful API design</strong>.
