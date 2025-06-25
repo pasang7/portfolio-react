@@ -32,7 +32,7 @@ export default function Footer({ darkMode }) {
           <p className="footer-text">
             &copy; {currentYear} Pasang Yangji Tamang. All rights reserved.
           </p>
-          <div className="footer-links">
+          {/* <div className="footer-links">
               <a
                 href="https://github.com/yourusername"
                 target="_blank"
@@ -52,7 +52,7 @@ export default function Footer({ darkMode }) {
               <a href="mailto:your@email.com" title="Email">
                 <FaEnvelope />
               </a>
-            </div>
+            </div> */}
         </div>
       </footer>
 
