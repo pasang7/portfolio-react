@@ -1,0 +1,88 @@
+.dark-mode {
+    --bg-color: #1e1e1e;
+}
+.footer-section {
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--border-color, #ccc); /* ✨ Divider line */
+    padding: 40px 20px 20px;
+    color: var(--text-color, #222);
+    text-align: center;
+  }
+  .footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .footer-text {
+    margin-bottom: 0.75rem;
+  }
+  
+  .tech-tag {
+    color: var(--accent-color);
+    font-weight: 600;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .footer-links a,
+  .back-to-top {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .footer-links a:hover,
+  .back-to-top:hover,
+  .footer-links a:focus,
+  .back-to-top:focus {
+    color: var(--accent-color);
+    transform: scale(1.1);
+  }
+  
+  .back-to-top {
+    padding: 0;
+    line-height: 1;
+  }
+
+  
+  /* Floating Back to Top Button */
+.back-to-top-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-to-top-float:hover,
+  .back-to-top-float:focus {
+    background-color: var(--accent-color-dark, #005999);
+    transform: scale(1.1);
+  }
+  
+  /* Optional: Hide on very small screens */
+  @media (max-width: 480px) {
+    .back-to-top-float {
+      bottom: 20px;
+      right: 20px;
+      padding: 10px;
+    }
+  }
+  

@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Project from './components/Project';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       <Project darkMode={darkMode} />
       <Testimonials darkMode={darkMode} />
       <Contact darkMode={darkMode} />
+      <Footer darkMode={darkMode} />
     </>
   );
 }
