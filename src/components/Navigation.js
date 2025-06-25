@@ -29,7 +29,8 @@ function Navigation({ darkMode, toggleDarkMode }) {
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#experience">Experience</Nav.Link>
-            <Nav.Link href="#projects">Experience</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#testimonials">Testimonials</Nav.Link>
             <Nav.Link href="#footer">Contact</Nav.Link>
             <Nav.Link onClick={toggleDarkMode} className="theme-toggle">
               {darkMode ? '🌙' : '☀️'}

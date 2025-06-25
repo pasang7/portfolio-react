@@ -1,7 +1,7 @@
 :root {
     --card-bg: #ffffff;
     --text-color: #212529;
-    --badge-bg: #6c757d;
+    --badge-bg: #df9a72;
     --badge-color: #fff;
     --badge-hover-bg: #5a6268;
     --card-shadow: rgba(0, 0, 0, 0.1);
@@ -26,7 +26,6 @@
   }
 
   #skills {
-    background-color: var(--bg-color);
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s ease, color 0.3s ease;

@@ -44,7 +44,7 @@ const projects = [
       'Responsive personal portfolio built with React and Bootstrap to showcase skills, projects, and work experience. Features dark mode, animations, and reusable components.',
     image: 'https://images.pexels.com/photos/4549411/pexels-photo-4549411.jpeg',
     techStack: ['React', 'Bootstrap', 'CSS'],
-    link: 'https://github.com/pasang7/react-portfolio',
+    link: 'https://pasangyangji.com.np/',
   },
   {
     title: 'E-Commerce Platform',
@@ -122,7 +122,7 @@ export default function Projects({ darkMode }) {
                     rel="noopener noreferrer"
                     className="project-link-btn"
                   >
-                    View Code
+                    View Demo
                   </Button>
                 )}
               </div>

@@ -1,20 +1,3 @@
-:root {
-    --accent-color: #f39c12;
-    --accent-color-light: #91919145;
-    --accent-color-dark: #000;
-    --text-color: #222;
-    --card-bg: #fff;
-    --text-muted: #777;
-  }
-  
-  .dark-mode {
-    --accent-color: #f1c40f;
-    --accent-color-light: #ffffff;
-    --accent-color-dark: #000;
-    --text-color: #eee;
-    --card-bg: #1b1b1b;
-    --text-muted: #bbb;
-  }
   .dark-mode#experience{
     --bg-color: #121212;
   }
