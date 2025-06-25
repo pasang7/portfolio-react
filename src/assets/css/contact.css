@@ -1,88 +1,161 @@
-.contact-section {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
+:root {
+    /* Github */
+    --github-color: #333;
+    --github-border: #ccc;
+    --github-hover-color: #000;
+    --github-hover-border: #000;
+    --github-hover-bg: #e0dddd;
+  
+    /* Resume */
+    --resume-color: #2e7d32;
+    --resume-border: #a5d6a7;
+    --resume-hover-color: #1b5e20;
+    --resume-hover-border: #1b5e20;
+    --resume-hover-bg: #e8f5e9;
+  
+    /* Email */
+    --email-color: #c62828;
+    --email-border: #ef9a9a;
+    --email-hover-color: #8e0000;
+    --email-hover-border: #8e0000;
+    --email-hover-bg: #ffebee;
+
+    --linked-color: #0073b1;
+    --linked-border: #048ad2;
+    --linked-hover-color: #0073b1;
+    --linked-hover-border: #00a6ff;
+    --linked-hover-bg: #9cdafc;
+  }
+
+  .dark-mode {
+
+    --bg-color: #1e1e1e;
+    
+    --github-color: #eee;
+    --github-border: #555;
+    --github-hover-color: #fff;
+    --github-hover-border: #8d8d8e;
+    --github-hover-bg: #5c5d5e;
+
+    --resume-color: #eee;
+    --resume-border: #4caf50;
+    --resume-hover-color: #81c784;
+    --resume-hover-border: #81c784;
+    --resume-hover-bg: #2e7d32;
+
+    --email-color: #eee;
+    --email-border: #b71c1c;
+    --email-hover-color: #ff8a80;
+    --email-hover-border: #ff8a80;
+    --email-hover-bg: #8e0000;
+
+    --linked-color: #ffffff;
+    --linked-border: #048ad2;
+    --linked-hover-color: #ffffff;
+    --linked-hover-border: #00a6ff;
+    --linked-hover-bg: #0073b1;
+  }
+  .contact-section {
+    background-color: var(--bg-color);
+    padding: 80px 20px;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   
   .contact-subtitle {
-    color: #555;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    font-size: 16px;
+    font-size: 1rem;
+    color: var(--text-muted, #555);
+    margin-bottom: 40px;
+    text-align: center;
   }
   
-  .contact-form {
-    max-width: 500px;
-    margin: 0 auto 30px;
-    text-align: left;
+  .links-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 680px;
   }
   
-  .contact-form label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: 600;
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    color: var(--linked-color, #0073b1);
+    text-decoration: none;
+    border: 2px solid var(--border-color, #ddd);
+    padding: 12px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition:color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+    min-width: 130px;
+    justify-content: center;
+    background-color: var(--card-bg);
   }
   
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: #007bff;
+  .contact-link:hover,
+  .contact-link:focus {
+    color: var(--linked-hover-color, #0073b1);
+    border-color: var(--linked-hover-border, #0073b1);
+    background-color: var(--linked-hover-bg, #f0f7ff);
+    box-shadow: 0 4px 12px rgba(0, 115, 177, 0.3);
     outline: none;
   }
   
-  .btn-submit {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  .contact-link[title='GitHub Profile'] {
+    color: var(--github-color, #333);
   }
   
-  .btn-submit:hover {
-    background-color: #0056b3;
+  .contact-link[title='GitHub Profile']:hover,
+  .contact-link[title='GitHub Profile']:focus {
+    color: var(--github-hover-color, #000);
+    border-color: var(--github-hover-border, #000);
+    background-color: var(--github-hover-bg, #e0dddd);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   }
   
-  .thank-you-message {
-    color: green;
-    font-weight: 500;
-    margin-bottom: 10px;
+  .contact-link[title='Download Resume'] {
+    color: var(--resume-color, #2e7d32);
   }
   
-  .error-message {
-    color: red;
-    font-weight: 500;
-    margin-bottom: 10px;
+  .contact-link[title='Download Resume']:hover,
+  .contact-link[title='Download Resume']:focus {
+    color: var(--resume-hover-color, #1b5e20);
+    border-color: var(--resume-hover-border, #1b5e20);
+    background-color: var(--resume-hover-bg, #e8f5e9);
+    box-shadow: 0 4px 12px rgba(27, 94, 32, 0.25);
   }
   
-  .contact-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-size: 16px;
-    margin-top: 20px;
+  .contact-link[title='Send me an email'] {
+    color: var(--email-color, #c62828);
   }
   
-  .contact-links a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: 500;
-    transition: color 0.2s ease;
+  .contact-link[title='Send me an email']:hover,
+  .contact-link[title='Send me an email']:focus {
+    color: var(--email-hover-color, #8e0000);
+    border-color: var(--email-hover-border, #8e0000);
+    background-color: var(--email-hover-bg, #ffebee);
+    box-shadow: 0 4px 12px rgba(142, 0, 0, 0.25);
   }
   
-  .contact-links a:hover {
-    color: #0056b3;
+  /* Responsive stack */
+  @media (max-width: 480px) {
+    .links-container {
+      flex-direction: column;
+      gap: 25px;
+    }
+    .contact-link {
+      min-width: auto;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
   }
   
