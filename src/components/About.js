@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import { Container, Row, Col, Button, Modal, Form, Badge } from 'react-bootstrap';
 import '../assets/css/about.css';
 import profileImg from '../assets/pasang.jpg';

@@ -4,6 +4,8 @@ import 'react-multi-carousel/lib/styles.css';
 import { Container, Button } from 'react-bootstrap';
 import '../assets/css/project.css';
 import bookingImg from '../assets/img1.png';
+import hrImg from '../assets/img2.png';
+import laundryImg from '../assets/img3.png';
 
 
 const projects = [
@@ -18,7 +20,7 @@ const projects = [
   {
     title: 'HR Management System',
     description: 'Custom-built HR and payroll system for managing employee records, attendance, and salary calculations. Developed RESTful APIs, implemented TDD with PHPUnit, and optimised MySQL database design.',
-    image:'https://private-user-images.githubusercontent.com/139978460/340240332-fa4b4bf3-e593-4913-bafa-5565139e003e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA4NDk2MDksIm5iZiI6MTc1MDg0OTMwOSwicGF0aCI6Ii8xMzk5Nzg0NjAvMzQwMjQwMzMyLWZhNGI0YmYzLWU1OTMtNDkxMy1iYWZhLTU1NjUxMzllMDAzZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyNVQxMTAxNDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMDBjOGE5Y2Q0YjY5MDgwZjgyMjA4NjRmMGYyNmJmZmYxMTM1M2RhNTA3NWQzMWQ2OWQxZTk4Y2ZjYmUxNDRiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.XEfMwrYzQf1mqnvnI1xZ4PONrS59YIsozRWHw-lWHZI',
+    image: hrImg,
     techStack: ['PHP', 'Laravel', 'MySQL', 'PHPUnit'],
     link: 'https://github.com/pasang7/hrm',
   },
@@ -34,7 +36,7 @@ const projects = [
     title: 'Laundry Management System',
     description:
     'A web application designed to streamline laundry business operations. This system facilitates efficient management of customer orders, sales tracking, and inventory control. ',
-    image: 'https://private-user-images.githubusercontent.com/139978460/340244213-f76b268e-0972-448d-952f-4ce275ffa4b1.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTA4NDk2NzQsIm5iZiI6MTc1MDg0OTM3NCwicGF0aCI6Ii8xMzk5Nzg0NjAvMzQwMjQ0MjEzLWY3NmIyNjhlLTA5NzItNDQ4ZC05NTJmLTRjZTI3NWZmYTRiMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNjI1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyNVQxMTAyNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yODllMmYwMDc5MThkMzc4Yjg5MjA2YjUwOTYzMzA2MDJkMmQ4N2ZlMDY0NDk0ZDkzZTg0MmYwYjMzYTE1OWUwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.F_izGrmP0_fqwswDKd23bDBYRk5b_vLp8WkEGLD67FM' ,
+    image: laundryImg ,
     techStack: ['Laravel 8', 'MySQL', 'Bootstrap', 'Javascript'],
     link: 'https://github.com/pasang7/eLaundry',
   },
