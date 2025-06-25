@@ -1,19 +1,20 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import '../assets/css/testimonials.css';
+import linkedinLogo from '../assets/linkedin-logo.png'; // Add LinkedIn logo to your assets
 
 const testimonials = [
   {
-    name: 'Anjali Shrestha',
-    role: 'Project Manager, TechAxis',
-    quote: 'Pasang consistently delivers high-quality work ahead of deadlines. A true asset to any tech team! His clean code and clear communication made our collaboration seamless and efficient.His clean code and clear communication made our collaboration seamless and efficient.His clean code and clear communication made our collaboration seamless and efficient.His clean code and clear communication made our collaboration seamless and efficient.',
-    avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
+    name: 'Erik L.',
+    role: '',
+    quote: 'It was and is a delight to work with Pasang. She quickly grasped the complexities of the projects...',
+    profile: 'https://www.linkedin.com/in/pasang-yangji-8b8600151/',
   },
   {
-    name: 'Niraj Joshi',
-    role: 'CTO, Code Himalaya',
-    quote: 'His clean code and clear communication made our collaboration seamless and efficient.',
-    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    name: 'Ketan M.',
+    role: '',
+    quote: 'Pasang is a former colleague of mine and an exceptional full stack developer...',
+    profile: 'https://www.linkedin.com/in/pasang-yangji-8b8600151/',
   }
 ];
 
@@ -23,14 +24,18 @@ export default function Testimonials({ darkMode }) {
       <Container className="pt-5 pb-5">
         <h2 className="section-title text-center mb-5">Testimonials</h2>
         <div className="testimonial-grid">
-          {testimonials.map(({ name, role, quote, avatar }, idx) => (
+          {testimonials.map(({ name, role, quote, profile }, idx) => (
             <div className="testimonial-card" key={idx}>
               <div className="testimonial-quote">“{quote}”</div>
               <div className="testimonial-author">
-                <img src={avatar} alt={`${name}'s avatar`} className="testimonial-avatar" />
+                <img src={linkedinLogo} alt="LinkedIn" className="linkedin-avatar" />
                 <div>
                   <div className="testimonial-name">{name}</div>
                   <div className="testimonial-role">{role}</div>
+                  <a href={profile} target="_blank" rel="noopener noreferrer" className="testimonial-link">
+                    Read More
+                  </a>
+                  <div className="testimonial-note">Photo and excerpt publicly available on LinkedIn</div>
                 </div>
               </div>
             </div>

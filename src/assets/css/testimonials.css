@@ -58,3 +58,28 @@
     color: #777;
   }
   
+  .linkedin-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.75rem;
+    object-fit: contain;
+  }
+  
+  .testimonial-link {
+    color: var(--accent-color);
+    font-size: 0.85rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 4px;
+  }
+  
+  .testimonial-link:hover {
+    text-decoration: underline;
+  }
+  
+  .testimonial-note {
+    font-size: 0.75rem;
+    color: gray;
+    margin-top: 4px;
+  }
+  
