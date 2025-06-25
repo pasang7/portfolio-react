@@ -1,0 +1,209 @@
+:root {
+    --accent-color: #f39c12;
+    --accent-color-light: #91919145;
+    --accent-color-dark: #000;
+    --text-color: #222;
+    --card-bg: #fff;
+    --text-muted: #777;
+  }
+  
+  .dark-mode {
+    --accent-color: #f1c40f;
+    --accent-color-light: #ffffff;
+    --accent-color-dark: #000;
+    --text-color: #eee;
+    --card-bg: #1b1b1b;
+    --text-muted: #bbb;
+  }
+  .dark-mode#experience{
+    --bg-color: #121212;
+  }
+
+  #experience {
+    --bg-color: #f8f9fa;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .section-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+  }
+  
+  /* Tabs */
+  .experience-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+  
+  .experience-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .experience-tabs .experience-tab {
+    background-color: transparent;
+    border: 0 transparent;
+    color: var(--text-color);
+    border-radius: 12px;
+    margin: 0.25rem 0.5rem;
+    padding: 1rem 1.25rem;
+    min-width: 180px;
+    text-align: left;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .experience-tabs .experience-tab:hover {
+    background-color: var(--accent-color-light);
+    color: var(--accent-color-dark);
+  }
+  
+  .experience-tabs .experience-tab.active {
+    background-color: var(--accent-color);
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: scale(1.04);
+  }
+  
+  .tab-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .tab-icon {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .time-period {
+    color: #858585;
+  }
+  
+  /* Experience Detail */
+  .experience-detail {
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-detail:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  }
+  
+  .role-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+  }
+  
+  .location {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Description list with staggered animation */
+  .description-list {
+    list-style-type: disc;
+    padding-left: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .description-list li {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInList 0.5s ease forwards;
+  }
+  
+  .description-list li:nth-child(1) { animation-delay: 0.1s; }
+  .description-list li:nth-child(2) { animation-delay: 0.2s; }
+  .description-list li:nth-child(3) { animation-delay: 0.3s; }
+  .description-list li:nth-child(4) { animation-delay: 0.4s; }
+  .description-list li:nth-child(5) { animation-delay: 0.5s; }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInList {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Optional Theme Toggle Button */
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--accent-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    z-index: 1000;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .theme-toggle:hover {
+    background: #d68910;
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .experience-tab {
+      padding: 0.8rem 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .tab-icon {
+      font-size: 1rem;
+    }
+  
+    .experience-detail {
+      padding: 1.2rem;
+    }
+  }
+  

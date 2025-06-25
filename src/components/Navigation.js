@@ -21,7 +21,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
       <Container>
         <Navbar.Brand href="#" className="d-flex flex-column">
           <span className="title">Pasang Yangji Tamang</span>
-          <small className="subtitle">Web Developer</small>
+          <small className="subtitle">Software Developer</small>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="main-navbar" />
         <Navbar.Collapse id="main-navbar">
@@ -29,6 +29,8 @@ function Navigation({ darkMode, toggleDarkMode }) {
             <Nav.Link href="#">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#experience">Experience</Nav.Link>
+            <Nav.Link href="#projects">Experience</Nav.Link>
             <Nav.Link href="#footer">Contact</Nav.Link>
             <Nav.Link onClick={toggleDarkMode} className="theme-toggle">
               {darkMode ? '🌙' : '☀️'}
