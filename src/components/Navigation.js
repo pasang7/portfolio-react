@@ -19,7 +19,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
       fixed="top"
     >
       <Container>
-        <Navbar.Brand href="#" className="d-flex flex-column">
+        <Navbar.Brand href="https://pasangyangji.com.np/" className="d-flex flex-column">
           <span className="title">Pasang Yangji Tamang</span>
           <small className="subtitle">Software Developer</small>
         </Navbar.Brand>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navigation from './components/Navigation';
+import Banner from './components/Banner';
 import About from './components/About';
 import Skill from './components/Skills';
 import Experience from './components/Experience';
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <Navigation darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Banner darkMode={darkMode} />
       <About darkMode={darkMode} />
       <Skill darkMode={darkMode} />
       <Experience darkMode={darkMode} />
