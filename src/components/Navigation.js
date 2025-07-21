@@ -4,6 +4,7 @@ import '../assets/css/navigation.css';
 
 function Navigation({ darkMode, toggleDarkMode }) {
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -32,7 +33,7 @@ function Navigation({ darkMode, toggleDarkMode }) {
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#testimonials">Testimonials</Nav.Link>
             <Nav.Link href="#footer">Contact</Nav.Link>
-            <Nav.Link onClick={toggleDarkMode} className="theme-toggle">
+            <Nav.Link onClick={toggleDarkMode} className="theme-toggle" style={{cursor: 'pointer'}}>
               {darkMode ? '🌙' : '☀️'}
             </Nav.Link>
           </Nav>

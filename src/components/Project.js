@@ -118,7 +118,7 @@ export default function Projects({ darkMode }) {
                 </p>
                 {link && (
                   <Button
-                    variant={darkMode ? 'outline-light' : 'outline-primary'}
+                    variant={darkMode ? 'outline-light' : 'outline-warning'}
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"

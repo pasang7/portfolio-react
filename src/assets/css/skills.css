@@ -18,7 +18,7 @@
     --badge-hover-bg: #5c5c5c;
     --card-shadow: rgba(255, 255, 255, 0.1);
     --card-hover-shadow: rgba(13, 110, 253, 0.6);
-    --accent-color: #f1c40f;
+    --accent-color: #f39c12;
 
     .card {
         --bs-card-title-color: #fff !important;
@@ -54,8 +54,8 @@
   
   
   .skill-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px var(--card-hover-shadow);
+    box-shadow: 0 0 15px 3px rgba(243, 156, 18, 0.4);
+  transform: translateY(-8px);
   }
 
   .card-header {
