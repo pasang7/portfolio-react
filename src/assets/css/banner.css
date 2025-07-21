@@ -1,308 +1,251 @@
-/* ======= Base & Dark Mode Hero Banner ======= */
-
-#hero-banner {
-  --bg-color: #f8f9fa;
-  background-color: var(--bg-color);
+/* General variables (customize as needed) */
+:root {
+  --highlight-color: #f39c12;
+  --button-text: #fff;
+  --background-light: #ffffff;
+  --background-dark: #0f172a;
+  --text-light: #111;
+  --text-dark: #eee;
 }
 
-.dark-mode#hero-banner {
-  --bg-color: #121212;
-  color: #ffffff;
+/* Base styles for light and dark modes */
+.advanced-hero.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
 }
 
-/* Text colors for dark mode */
-.dark-mode#hero-banner .hero-title,
-.dark-mode#hero-banner .typed-text,
-.dark-mode#hero-banner .tagline,
-.dark-mode#hero-banner .cv-button,
-.dark-mode#hero-banner .contact-button {
-  color: #ffffff;
+.advanced-hero.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
 }
 
-.dark-mode#hero-banner .highlight {
-  color: #66b2ff; /* lighter blue for contrast */
-}
-
-/* ======= Typography & Animation ======= */
-
-.advanced-hero {
-  position: relative;
-  padding: 120px 0 80px;
-  overflow: hidden;
-  min-height: 90vh;
-}
-
-.hero-row {
-  position: relative;
-  z-index: 2;
-}
-
-/* Fade-in animation */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hero-title,
-.typed-text {
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-}
-
-.hero-title {
-  animation-delay: 0.3s;
-  font-size: 3.6rem;
-  font-weight: 700;
-  color: #222;
-  line-height: 1.15;
-  margin-bottom: 0.5rem;
-}
-
-.highlight {
-  color: #0d6efd;
-}
-
-.typed-text {
-  animation-delay: 0.6s;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #555;
-  min-height: 40px;
-  margin-bottom: 0.5rem;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.tagline {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #666;
-  margin-top: 10px;
-}
-
-/* ======= Buttons ======= */
-
-/* Light mode Download CV button */
-.hero-buttons .cv-button {
-  border: 2px solid #0d6efd;
-  color: white;
-  padding: 0.65rem 1.6rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
-  background-color: #0d6efd; /* full blue background on load */
-}
-
-.hero-buttons .cv-button:hover {
-  background-color: white;
-  color: #0d6efd;
-  border-color: #0d6efd;
-  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.6);
-}
-
-/* Dark mode Download CV button */
-.dark-mode#hero-banner .cv-button {
-  border-color: #66b2ff;
-  color: #66b2ff;
-  background-color: transparent; /* fix: no blue background on load */
-  box-shadow: none;
-}
-
-.dark-mode#hero-banner .cv-button:hover {
-  background-color: #66b2ff;
-  color: #121212;
-  box-shadow: 0 8px 25px rgba(102, 178, 255, 0.6);
-}
-
-/* Light mode Contact button */
-.contact-button {
-  border-width: 2px;
-  padding: 0.65rem 1.6rem;
-  font-weight: 600;
-  color: #0d6efd;
-  transition: all 0.3s ease;
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.contact-button:hover {
-  background-color: #0d6efd;
-  color: white;
-  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.6);
-}
-
-/* Dark mode Contact button */
-.dark-mode#hero-banner .contact-button {
-  border-color: #66b2ff;
-  color: #66b2ff;
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.dark-mode#hero-banner .contact-button:hover {
-  background-color: #66b2ff;
-  color: #121212;
-  box-shadow: 0 8px 25px rgba(102, 178, 255, 0.6);
-}
-
-/* ======= Hero Image & Effects ======= */
-
-.hero-image-wrapper {
-  position: relative;
-  display: inline-block;
-  perspective: 1500px;
-  text-align: center;
-}
-
-.photo-card {
-  position: relative;
-  display: inline-block;
-  border-radius: 50%;
-  padding: 6px;
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
-  box-shadow: 0 10px 40px rgba(13, 110, 253, 0.5);
-}
-
-.neon-glow {
-  position: relative;
-  border-radius: 50%;
-  padding: 6px;
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
-  box-shadow:
-    0 0 8px #0d6efd,
-    0 0 20px #6610f2,
-    0 0 40px #0d6efd,
-    0 0 60px #6610f2;
-  animation: neonPulse 3s ease-in-out infinite alternate;
-}
-
-@keyframes neonPulse {
-  0% {
-    box-shadow:
-      0 0 8px #0d6efd,
-      0 0 20px #6610f2,
-      0 0 40px #0d6efd,
-      0 0 60px #6610f2;
-  }
-  100% {
-    box-shadow:
-      0 0 15px #0d6efd,
-      0 0 30px #6610f2,
-      0 0 50px #0d6efd,
-      0 0 80px #6610f2;
-  }
-}
-
-.hero-image {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid white;
-  display: block;
-  user-select: none;
-}
-
-/* ======= Floating Icons ======= */
-
-.floating-icons {
+/* Background shapes for subtle abstract art */
+.background-shapes {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 0;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.12;
+  filter: blur(30px);
+  mix-blend-mode: screen;
+}
+
+.shape.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--highlight-color);
+  top: 20%;
+  left: 10%;
+}
+
+.shape.triangle {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 260px solid #0d6efd;
+  top: 60%;
+  right: 15%;
+  transform: rotate(30deg);
+}
+
+.shape.square {
+  width: 220px;
+  height: 220px;
+  background: #6610f2;
+  top: 30%;
+  right: 35%;
+  transform: rotate(45deg);
+}
+
+/* Animated Gradient Text */
+.animated-gradient-text {
+  font-weight: 900;
+  font-size: 3.5rem;
+  background: linear-gradient(270deg, #f39c12, #6610f2, #0d6efd);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s ease infinite;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Typed text */
+.typed-text {
+  font-size: 1.5rem;
+  color: var(--highlight-color);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Social icons container */
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Social icon styles and pulse animation on hover */
+.social-icons a {
+  font-size: 1.6rem;
+  color: var(--highlight-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.pulse-hover:hover {
+  animation: pulse 1.2s infinite;
+  color: #0d6efd;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Hero buttons styling */
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+.btn-hover-glow {
+  background-color: var(--highlight-color);
+  color: var(--button-text);
+  border-radius: 30px;
+  padding: 0.6rem 1.6rem;
+  font-weight: 600;
+  box-shadow: 0 0 10px var(--highlight-color);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-hover-glow:hover {
+  box-shadow:
+    0 0 20px var(--highlight-color),
+    0 0 40px #6610f2;
+  transform: translateY(-3px);
+}
+
+/* Outline warning button style (used for contact) */
+.btn-outline-warning {
+  border-radius: 30px;
+  padding: 0.6rem 1.6rem;
+  font-weight: 600;
+  border-width: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-warning:hover {
+  background-color: var(--highlight-color);
+  color: var(--button-text);
+  box-shadow:
+    0 0 20px var(--highlight-color),
+    0 0 40px #6610f2;
+  transform: translateY(-3px);
+}
+
+/* Profile image card with neon glow and shadow */
+.neon-glow-shadow {
+  border-radius: 50%;
+  overflow: hidden;
   width: 280px;
   height: 280px;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  overflow: visible;
-  z-index: 3;
+  margin: 0 auto;
+  background: #222;
+  box-shadow:
+    0 0 15px var(--highlight-color),
+    0 0 40px #6610f2,
+    0 0 80px #0d6efd,
+    0 0 120px var(--highlight-color);
+  transition: box-shadow 0.3s ease;
+  cursor: grab;
 }
 
-.icon {
-  position: absolute;
-  font-size: 40px;
+.neon-glow-shadow:active {
+  cursor: grabbing;
+}
+
+.neon-glow-shadow:hover {
+  box-shadow:
+    0 0 25px var(--highlight-color),
+    0 0 60px #6610f2,
+    0 0 100px #0d6efd,
+    0 0 160px var(--highlight-color);
+}
+
+/* Profile image styling */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Floating tech icons under profile image */
+.floating-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.floating-icons .icon {
+  font-size: 26px;
+  color: var(--highlight-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+.floating-icons .icon:hover {
   color: #0d6efd;
-  opacity: 0.85;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  filter: drop-shadow(0 2px 6px rgba(13, 110, 253, 0.6));
+  transform: scale(1.2) rotate(15deg);
 }
 
-/* Hover tilt + scale */
-.icon:hover {
-  transform: scale(1.4) rotate(15deg);
-  opacity: 1;
-  filter: drop-shadow(0 6px 12px rgba(13, 110, 253, 0.9));
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-/* Floating rotation animation */
-@keyframes floatRotate {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 0.85;
-  }
-  50% {
-    transform: translateY(-10px) rotate(10deg);
-    opacity: 1;
-  }
-}
-
-.icon-react {
-  top: 12%;
-  left: 52%;
-  animation: floatRotate 6s ease-in-out infinite;
-  animation-delay: 0s;
-}
-
-.icon-php {
-  top: 52%;
-  left: 90%;
-  animation: floatRotate 6s ease-in-out infinite;
-  animation-delay: 1.5s;
-}
-
-.icon-laravel {
-  top: 88%;
-  left: 58%;
-  animation: floatRotate 6s ease-in-out infinite;
-  animation-delay: 3s;
-}
-
-.icon-docker {
-  top: 52%;
-  left: 12%;
-  animation: floatRotate 6s ease-in-out infinite;
-  animation-delay: 4.5s;
-}
-
-/* ======= Responsive ======= */
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
+    text-align: center;
   }
 
   .typed-text {
-    font-size: 1.3rem;
-    min-height: 36px;
+    font-size: 1.2rem;
+    text-align: center;
   }
 
-  .hero-image {
-    width: 200px;
-    height: 200px;
+  .hero-text {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .photo-card {
+    width: 220px !important;
+    height: 220px !important;
+    margin: 0 auto;
   }
 
   .floating-icons {
-    width: 220px;
-    height: 220px;
-  }
-
-  .icon {
-    font-size: 32px;
+    justify-content: center;
   }
 }
