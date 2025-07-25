@@ -6,6 +6,7 @@ import '../assets/css/project.css';
 import bookingImg from '../assets/img1.png';
 import hrImg from '../assets/img2.png';
 import laundryImg from '../assets/img3.png';
+import matchImg from '../assets/img4.png';
 
 
 const projects = [
@@ -23,6 +24,14 @@ const projects = [
     image: hrImg,
     techStack: ['PHP', 'Laravel', 'MySQL', 'PHPUnit'],
     link: 'https://github.com/pasang7/hrm',
+  },
+  {
+    title: 'Match-Mania',
+    description:
+    'Match Mania is a fun, fast-paced memory matching card game built with pure HTML, CSS, and JavaScript.',
+    image: matchImg,
+    techStack: ['HTML', 'CSS', 'Javascript'],
+    link: 'https://pasang7.github.io/Match-Mania/',
   },
   {
     title: 'Tours & Travel Websites',
